@@ -737,10 +737,10 @@ body::before {
 }
 .download-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 3rem;
-  max-width: 900px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -809,6 +809,28 @@ body::before {
 .download-btn:hover {
   box-shadow: 0 8px 25px rgba(5,150,105,0.35);
   transform: translateY(-1px);
+}
+.download-alt-btns {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.6rem;
+}
+.download-btn-sm {
+  padding: 0.35rem 0.9rem;
+  background: var(--dark-600, rgba(255,255,255,0.06));
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--emerald);
+  text-decoration: none;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+.download-btn-sm:hover {
+  background: rgba(5,150,105,0.15);
+  border-color: var(--emerald);
 }
 .download-formats {
   margin-top: 1rem;
@@ -1253,22 +1275,32 @@ body::before {
         <div class="download-os-icon">🪟</div>
         <h3>Windows</h3>
         <div class="version">v0.1.0 — 64-bit</div>
-        <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/latest" target="_blank" rel="noopener noreferrer">⬇ تحميل .exe</a>
+        <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/download/v0.1.0/Eqraa.Desktop_0.1.0_x64-setup.exe" target="_blank" rel="noopener noreferrer">⬇ تحميل .exe</a>
         <div class="download-formats">.exe / .msi</div>
       </div>
       <div class="download-card" data-reveal data-delay="150">
         <div class="download-os-icon">🍎</div>
         <h3>macOS</h3>
         <div class="version">v0.1.0 — Universal</div>
-        <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/latest" target="_blank" rel="noopener noreferrer">⬇ تحميل .dmg</a>
+        <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/download/v0.1.0/Eqraa.Desktop_0.1.0_universal.dmg" target="_blank" rel="noopener noreferrer">⬇ تحميل .dmg</a>
         <div class="download-formats">.dmg / .app</div>
       </div>
       <div class="download-card" data-reveal data-delay="300">
         <div class="download-os-icon">🐧</div>
         <h3>Linux</h3>
         <div class="version">v0.1.0 — متعدد التوزيعات</div>
-        <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/latest" target="_blank" rel="noopener noreferrer">⬇ تحميل .AppImage</a>
-        <div class="download-formats">.AppImage / .deb / .rpm</div>
+        <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/download/v0.1.0/Eqraa.Desktop_0.1.0_amd64.AppImage" target="_blank" rel="noopener noreferrer">⬇ تحميل .AppImage</a>
+        <div class="download-alt-btns">
+          <a class="download-btn-sm" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/download/v0.1.0/Eqraa.Desktop_0.1.0_amd64.deb" target="_blank" rel="noopener noreferrer">.deb</a>
+          <a class="download-btn-sm" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/download/v0.1.0/Eqraa.Desktop-0.1.0-1.x86_64.rpm" target="_blank" rel="noopener noreferrer">.rpm</a>
+        </div>
+      </div>
+      <div class="download-card" data-reveal data-delay="450">
+        <div class="download-os-icon">🏗️</div>
+        <h3>Arch Linux</h3>
+        <div class="version">v0.1.0 — x86_64</div>
+        <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/download/v0.1.0/eqraa-desktop-0.1.0-1-x86_64.pkg.tar.zst" target="_blank" rel="noopener noreferrer">⬇ تحميل .pkg.tar.zst</a>
+        <div class="download-formats">.pkg.tar.zst</div>
       </div>
     </div>
   </div>
