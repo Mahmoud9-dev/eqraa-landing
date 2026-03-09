@@ -463,8 +463,8 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
 }
+.mockup-icon svg { width: 20px; height: 20px; }
 .mockup-card-label {
   font-size: 0.75rem;
   color: var(--cream-dim);
@@ -605,11 +605,12 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
   margin-bottom: 1.2rem;
   background: rgba(5,150,105,0.1);
   border: 1px solid rgba(5,150,105,0.2);
+  color: var(--emerald-light);
 }
+.feature-icon svg { width: 24px; height: 24px; }
 .feature-card h3 {
   font-size: 1.15rem;
   font-weight: 700;
@@ -717,8 +718,9 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  color: var(--emerald-light);
 }
+.tech-item-icon svg { width: 22px; height: 22px; }
 .tech-item h4 {
   font-size: 1rem;
   font-weight: 600;
@@ -777,9 +779,13 @@ body::before {
 }
 .download-card:hover::after { transform: scaleX(1); }
 .download-os-icon {
-  font-size: 2.5rem;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--emerald-light);
 }
+.download-os-icon svg { width: 48px; height: 48px; }
 .download-card h3 {
   font-size: 1.2rem;
   font-weight: 700;
@@ -865,8 +871,10 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
+  color: var(--emerald-light);
   animation: shieldPulse 3s ease-in-out infinite;
+}
+.privacy-icon svg { width: 36px; height: 36px;
 }
 @keyframes shieldPulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(5,150,105,0.3); }
@@ -1051,35 +1059,35 @@ body::before {
         <div class="mockup-welcome">مرحباً بك في إقراء</div>
         <div class="mockup-grid">
           <div class="mockup-card">
-            <div class="mockup-icon" style="background:rgba(5,150,105,0.15);">👥</div>
+            <div class="mockup-icon" style="background:rgba(5,150,105,0.15);color:#34d399;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
             <div class="mockup-card-label">الإدارة</div>
           </div>
           <div class="mockup-card">
-            <div class="mockup-icon" style="background:rgba(59,130,246,0.15);">📖</div>
+            <div class="mockup-icon" style="background:rgba(59,130,246,0.15);color:#60a5fa;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
             <div class="mockup-card-label">القرآن</div>
           </div>
           <div class="mockup-card">
-            <div class="mockup-icon" style="background:rgba(245,158,11,0.15);">🎯</div>
+            <div class="mockup-icon" style="background:rgba(245,158,11,0.15);color:#fbbf24;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
             <div class="mockup-card-label">التجويد</div>
           </div>
           <div class="mockup-card">
-            <div class="mockup-icon" style="background:rgba(168,85,247,0.15);">🎓</div>
+            <div class="mockup-icon" style="background:rgba(168,85,247,0.15);color:#a78bfa;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 10 10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/><path d="M22 10v6"/></svg></div>
             <div class="mockup-card-label">التربوي</div>
           </div>
           <div class="mockup-card">
-            <div class="mockup-icon" style="background:rgba(236,72,153,0.15);">📝</div>
+            <div class="mockup-icon" style="background:rgba(236,72,153,0.15);color:#f472b6;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></div>
             <div class="mockup-card-label">الامتحانات</div>
           </div>
           <div class="mockup-card">
-            <div class="mockup-icon" style="background:rgba(34,211,238,0.15);">📚</div>
+            <div class="mockup-icon" style="background:rgba(34,211,238,0.15);color:#22d3ee;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg></div>
             <div class="mockup-card-label">المواد الدراسية</div>
           </div>
           <div class="mockup-card">
-            <div class="mockup-icon" style="background:rgba(132,204,22,0.15);">📅</div>
+            <div class="mockup-icon" style="background:rgba(132,204,22,0.15);color:#84cc16;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
             <div class="mockup-card-label">الجدول الدراسي</div>
           </div>
           <div class="mockup-card">
-            <div class="mockup-icon" style="background:rgba(251,146,60,0.15);">✅</div>
+            <div class="mockup-icon" style="background:rgba(251,146,60,0.15);color:#fb923c;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></div>
             <div class="mockup-card-label">الحضور والانصراف</div>
           </div>
         </div>
@@ -1145,42 +1153,42 @@ body::before {
     </div>
     <div class="features-grid">
       <div class="feature-card" data-reveal data-delay="0">
-        <div class="feature-icon">📖</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
         <h3>تتبع المحفوظ</h3>
         <p>متابعة حفظ الطلاب بتفصيل — الحفظ الجديد، المراجعة القريبة والبعيدة. نظام شامل لتتبع مسيرة كل طالب.</p>
       </div>
       <div class="feature-card" data-reveal data-delay="100">
-        <div class="feature-icon">✅</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></div>
         <h3>الحضور والانصراف</h3>
         <p>قاعدة بيانات متكاملة لتسجيل حضور الطلاب والمشايخ يومياً مع تقارير وإحصائيات مفصلة.</p>
       </div>
       <div class="feature-card" data-reveal data-delay="200">
-        <div class="feature-icon">🎓</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 10 10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/><path d="M22 10v6"/></svg></div>
         <h3>الدروس التربوية</h3>
         <p>قسم خاص بالدروس التربوية لتنظيم المحتوى التعليمي والتربوي بشكل منظم وسهل الوصول.</p>
       </div>
       <div class="feature-card" data-reveal data-delay="300">
-        <div class="feature-icon">📚</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg></div>
         <h3>المواد الشرعية</h3>
         <p>إدارة مواد الفقه والعقيدة والسيرة والحديث واللغة — كل المواد الشرعية في مكان واحد منظم.</p>
       </div>
       <div class="feature-card" data-reveal data-delay="400">
-        <div class="feature-icon">📅</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
         <h3>الجدول الدراسي</h3>
         <p>تنظيم المواعيد والحصص بشكل بصري سهل. جدول مرن يناسب احتياجات كل مركز ومعلم.</p>
       </div>
       <div class="feature-card" data-reveal data-delay="500">
-        <div class="feature-icon">📝</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></div>
         <h3>نظام الامتحانات</h3>
         <p>إنشاء وإدارة الاختبارات ومتابعة نتائج الطلاب — نظام تقييم شامل لقياس مستوى التحصيل.</p>
       </div>
       <div class="feature-card" data-reveal data-delay="600">
-        <div class="feature-icon">📤</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></svg></div>
         <h3>استيراد وتصدير</h3>
         <p>نقل البيانات بسهولة — استيراد بيانات موجودة أو تصدير النسخ الاحتياطية بضغطة زر.</p>
       </div>
       <div class="feature-card" data-reveal data-delay="700">
-        <div class="feature-icon">🌐</div>
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
         <h3>دعم ثنائي اللغة</h3>
         <p>واجهة متكاملة تدعم اللغة العربية والإنجليزية — مناسبة للمراكز في أي مكان في العالم.</p>
       </div>
@@ -1213,28 +1221,28 @@ body::before {
       </div>
       <div class="tech-list">
         <div class="tech-item" data-reveal>
-          <div class="tech-item-icon">🖥️</div>
+          <div class="tech-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
           <div>
             <h4>نسخة سطح المكتب</h4>
             <p>React + Rust (Tauri) + SQLite — أداء عالي وحجم صغير مع تخزين محلي آمن</p>
           </div>
         </div>
         <div class="tech-item" data-reveal>
-          <div class="tech-item-icon">🌍</div>
+          <div class="tech-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <div>
             <h4>نسخة الويب</h4>
             <p>React / Next.js + Supabase (PostgreSQL) — وصول من أي مكان عبر المتصفح</p>
           </div>
         </div>
         <div class="tech-item" data-reveal>
-          <div class="tech-item-icon">🤖</div>
+          <div class="tech-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M12 2v6"/><circle cx="12" cy="2" r="1.5" fill="currentColor" stroke="none"/><circle cx="9" cy="14" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="14" r="1.5" fill="currentColor" stroke="none"/><path d="M9 18h6"/></svg></div>
           <div>
             <h4>مدعوم بالذكاء الاصطناعي</h4>
             <p>تم الاستعانة بـ Claude Code, Gemini, Codex و GLM في عملية التطوير</p>
           </div>
         </div>
         <div class="tech-item" data-reveal>
-          <div class="tech-item-icon">🔒</div>
+          <div class="tech-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
           <div>
             <h4>خصوصية كاملة</h4>
             <p>جميع البيانات مخزنة محلياً على جهازك — لا سيرفرات خارجية، لا تتبع</p>
@@ -1248,7 +1256,7 @@ body::before {
 <!-- Privacy Banner -->
 <div class="privacy-banner">
   <div class="privacy-inner">
-    <div class="privacy-icon">🛡️</div>
+    <div class="privacy-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
     <div class="privacy-text">
       <h3>بياناتك في أمان تام</h3>
       <p>
@@ -1272,21 +1280,21 @@ body::before {
     </div>
     <div class="download-cards">
       <div class="download-card" data-reveal data-delay="0">
-        <div class="download-os-icon">🪟</div>
+        <div class="download-os-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0zm10.949-9.55L24 0v11.4H10.949zM0 12.6h9.75v9.451L0 20.699zm10.949-.601H24V24l-12.9-1.801z"/></svg></div>
         <h3>Windows</h3>
         <div class="version">v0.1.0 — 64-bit</div>
         <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/download/v0.1.0/Eqraa.Desktop_0.1.0_x64-setup.exe" target="_blank" rel="noopener noreferrer">⬇ تحميل .exe</a>
         <div class="download-formats">.exe / .msi</div>
       </div>
       <div class="download-card" data-reveal data-delay="150">
-        <div class="download-os-icon">🍎</div>
+        <div class="download-os-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.94 5.19A4.38 4.38 0 0 0 16 2a4.44 4.44 0 0 0-3 1.52 4.17 4.17 0 0 0-1 3.09 3.69 3.69 0 0 0 2.94-1.42zm2.52 7.44a4.51 4.51 0 0 1 2.16-3.81 4.66 4.66 0 0 0-3.66-2c-1.56-.16-3.12 1.01-3.96 1.01-.84 0-2.13-1-3.49-1a5.12 5.12 0 0 0-4.29 2.65c-1.84 3.18-.47 7.88 1.32 10.46.87 1.26 1.91 2.68 3.27 2.63 1.31-.05 1.81-.85 3.4-.85 1.59 0 2.05.85 3.44.82 1.41-.03 2.31-1.29 3.17-2.55a11.35 11.35 0 0 0 1.44-2.95 4.38 4.38 0 0 1-2.8-4.41z"/></svg></div>
         <h3>macOS</h3>
         <div class="version">v0.1.0 — Universal</div>
         <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/download/v0.1.0/Eqraa.Desktop_0.1.0_universal.dmg" target="_blank" rel="noopener noreferrer">⬇ تحميل .dmg</a>
         <div class="download-formats">.dmg / .app</div>
       </div>
       <div class="download-card" data-reveal data-delay="300">
-        <div class="download-os-icon">🐧</div>
+        <div class="download-os-icon"><img src="linux.png" alt="Linux" style="width:48px;height:48px;object-fit:contain;filter:grayscale(100%) invert(72%) sepia(51%) saturate(449%) hue-rotate(108deg) brightness(97%) contrast(90%);"></div>
         <h3>Linux</h3>
         <div class="version">v0.1.0 — متعدد التوزيعات</div>
         <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/download/v0.1.0/Eqraa.Desktop_0.1.0_amd64.AppImage" target="_blank" rel="noopener noreferrer">⬇ تحميل .AppImage</a>
@@ -1296,7 +1304,7 @@ body::before {
         </div>
       </div>
       <div class="download-card" data-reveal data-delay="450">
-        <div class="download-os-icon">🏗️</div>
+        <div class="download-os-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L2 22h4.5l5.5-12.5L17.5 22H22L12 0zm0 8c-1.2 2.7-2 4.5-3.2 7 1-.8 2-1.2 3.2-1.2s2.2.4 3.2 1.2C14 13.5 13.2 11.7 12 8z"/></svg></div>
         <h3>Arch Linux</h3>
         <div class="version">v0.1.0 — x86_64</div>
         <a class="download-btn" href="https://github.com/Mahmoud9-dev/eqraa-desktop/releases/download/v0.1.0/eqraa-desktop-0.1.0-1-x86_64.pkg.tar.zst" target="_blank" rel="noopener noreferrer">⬇ تحميل .pkg.tar.zst</a>
